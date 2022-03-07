@@ -1,0 +1,178 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="img/png" href="logo.png">
+    <title>La foundant de Betoir</title>
+</head>
+
+ 
+<body>
+<header>
+    <div class="container">
+        <img src="logo.png" alt="Logo Pastel" width="100px"alt="100px">
+        <nav>
+            <a href="#Pan Base"> Pasteles</a>
+            <a href="#Sabores"> Sabores</a>
+            <a href="#Adornos"> Adornos</a>
+            <a href="#Seleccion"> Ordenes</a>
+            <a href="./Pastelero.html"> Almacen</a>
+        </nav> 
+    </div>
+</header>    
+
+
+<h1>Bienvenido a La foundant de Betoir</h1>
+
+<p>
+Nos encontramos en Madero No. 38 <br>
+con un horario de atencion desde las 11:00 a.m. - 9:00 p.m. 
+</p>
+<img src="logo.png" alt="" width="400px"alt="400 px">
+
+<section class="table" id="Pan Base">
+    <table>
+        <tr>
+            <th>Pan <base href=""></th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Harina de trigo</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Harina de arroz</td>
+            <td>$165</td>
+        </tr>
+        <tr>
+            <td>Harina de maiz</td>
+            <td>$80</td>
+        </tr>
+        <tr>
+            <td>harina de avena</td>
+            <td>$199</td>
+        </tr>
+       </table>
+</section>
+
+<section class="table" id="Sabores">
+    <table>
+        <tr>
+            <th>Sabor de Pastel</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Chocolate</td>
+            <td>$400</td>
+        </tr>
+        <tr>
+            <td>Tres leches</td>
+            <td>$600</td>
+        </tr>
+        <tr>
+            <td>fresa</td>
+            <td>$400</td>
+        </tr>
+        <tr>
+            <td>vainilla</td>
+            <td>$250</td>
+        </tr>
+        <tr>
+            <td>zanahoria</td>
+            <td>$280</td>
+        </tr>
+        <tr>
+            <td>Queso</td>
+            <td>$500</td>
+        </tr>
+        <tr>
+            <td>Cajeta</td>
+            <td>$630</td>
+        </tr>
+    </table>
+</section>
+
+<section class="table" id="Adornos">
+    <table>
+        <tr>
+            <th>Adorno de Pastel</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Imagen de caricatura</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Cubierta de fondant</td>
+            <td>$280</td>
+        </tr>
+        <tr>
+            <td>Decorado de chantilly</td>
+            <td>$70</td>
+        </tr>
+     </table>
+</section>
+<section id="Seleccion" name="Seleccion">
+    <h2>Selecciona el tipo de pan </h2>
+    <label for="harina">Tipo de harina</label>
+    <select id="harina" name="harina">
+        <option value=150>Trigo $150</option>
+        <option value=165>Arroz $165</option>
+        <option value=80>Maiz $80</option>
+        <option value=199>Avena $199</option>
+    </select>
+
+    <h2>Selecciona el sabor o sabores de tu pastel</h2><br>
+    <input type="checkbox" id="topping1" name="topping1" value=400>
+    <label for="topping1">Sabor Chocolate $400</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value=600>
+    <label for="topping2">Sabor Tres Leches $600</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value=400>
+    <label for="topping3">Sabor Fresa $400</label><br><br>
+    <input type="checkbox" id="topping4" name="topping4" value=250>
+    <label for="topping4">Sabor Vainilla $250</label><br><br>
+    <input type="checkbox" id="topping5" name="topping5" value=280>
+    <label for="topping5">Sabor Zanahoria $280</label><br><br>
+    <input type="checkbox" id="topping6" name="topping6" value=500>
+    <label for="topping6">Sabor Queso $500</label><br><br>
+    <input type="checkbox" id="topping7" name="topping7" value=630>
+    <label for="topping7">Sabor Cajeta $630</label><br><br>
+
+
+    <h2>Selecciona el adorno de tu pastel</h2><br>
+    <input type="checkbox" id="topping1" name="topping1" value=150>
+    <label for="topping1">Decorado Imagen $150</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value=280>
+    <label for="topping2">Cubierta de fondant $280</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value=70>
+    <label for="topping3">Decorado de chantilly $70</label><br><br>
+</section>
+
+<section id="Compra" name="compra">
+    <form action="/accion.js" id="form1" method="post"></form>
+        <h2>LLena los datos de orden y envío</h2>
+        <label for="correo1">Nombre Completo</label><br>
+        <input type="email" id="correo1" name="correo1"><br><br>
+        
+        <label for="tel1">Teléfono de Contacto</label><br>
+        <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+
+        <label for="correo1">Correo Electrónico</label><br>
+        <input type="email" id="correo1" name="correo1"><br><br>
+        
+        <label for="psw1">Input de Password</label><br>
+        <input type="password" id="psw1" name="psw1"><br><br>
+        
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    
+</section>
+
+
+
+</body>
+</html>
